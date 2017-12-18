@@ -1,0 +1,74 @@
+* {
+	box-sizing: border-box;
+	margin:0;
+	padding: 0;
+	
+
+}
+
+body {
+	color:white;
+	font-family: sans-serif;
+	background-color: red;
+}
+
+
+
+
+
+h1 {
+	font-size: 2em;
+	color: rgba(255,255,255,1);
+	text-transform: uppercase;
+	padding:0;
+	text-align: center;
+	margin-top:2%;
+
+}
+
+
+
+
+
+
+
+.ticker p {
+	color:white; 
+	transform: rotate(90deg);
+	transform-origin: left top 0;
+	position:absolute;
+	top:10px;
+	-webkit-animation-name: slide; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 10s; /* Safari 4.0 - 8.0 */
+    animation-name: slide;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    
+}
+
+
+/* Standard syntax */
+@keyframes slide {
+    0%   {top:10px;}
+    25%  {top:40px;}
+    50%  {top:70px;}
+    100% {top:800px;}
+}
+
+
+
+.red p{
+	left:3%;
+
+}
+.skell-wrap {
+	display: flex;
+	justify-content: center; 
+}
+
+.skell {
+	flex-grow: 1;
+	height: 800px;
+
+}
+
